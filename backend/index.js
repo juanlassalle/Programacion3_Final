@@ -1,5 +1,8 @@
 import express  from "express";
 import db from './src/database/db.js'
+import ciudadRouter from './src/routes/ciudadRoutes.js'
+import personaRouter from './src/routes/personaRoutes.js'
+import provinciaRouter from './src/routes/provinciaRouter.js'
 
 /* import './src/models/Provincia.js' */
 
@@ -17,6 +20,10 @@ try {
 }
 
 const PORT = process.env.PORT || 3001
+
+app.use(ciudadRouter)
+app.use(personaRouter)
+app.use(provinciaRouter)
 
 
 app.listen(PORT, () => {
