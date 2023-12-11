@@ -1,9 +1,12 @@
-section {
-    color: #fff;
-    text-shadow: 3px 3px rgba(50, 50, 50, 0.5);
-    background-color: #ffb6b9b0;
-    height: 100vh;
+main {
+    padding-top: 5rem;
 }
+footer {
+    margin-bottom: 2px;
+}
+
 .navBg {
-    background-color: #7952b3;
+    background-color: #8780f3;
+    margin: 0;
+    padding: 20px 20px;
 }

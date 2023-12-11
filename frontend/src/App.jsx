@@ -11,6 +11,7 @@ function App() {
 
   return (
     <div>
+      <header className='text-center navBg'>Final de Programación 3</header>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Navegador/>}>

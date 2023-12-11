@@ -29,11 +29,13 @@ const crearCiudad = async(req,res) => {
             nombre: nombre,
             provinciaId: provinciaId
         })
-        res.status(201).json(nuevaCiudad)
+        //res.status(201).json(nuevaCiudad)
+        res.redirect('/ciudades')
     } catch (error) {
         console.error(error)
         res.status(500).json({error: error.message})
     }
+    res.redirect
 }
 const actualizarCiudad = async(req,res) => {
     try {
