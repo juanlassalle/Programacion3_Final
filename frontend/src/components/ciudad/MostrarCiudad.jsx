@@ -25,6 +25,7 @@ const MostrarCiudad = () => {
 
     return(
         <div>
+            <Link to="/crearCiudad">Crear</Link>
             <table className="table-auto">
                 <thead>
                     <tr>
@@ -37,7 +38,7 @@ const MostrarCiudad = () => {
                         <tr key={ciudad.id}>
                             <td> {ciudad.nombre} </td>
                             <td>
-                                <Link className='mt-4 mb-4 rounded-md' to={`/ciudad/${ciudad.id}`}>Editar</Link>
+                                <Link className='mt-4 mb-4 rounded-md' to={`/editarCiudad/${ciudad.id}`}>Editar</Link>
                                 <button className='mt-4 mb-4 rounded-md' onClick={() => deleteCiudad(ciudad.id)}>Borrar</button>
                             </td>
                         </tr>
